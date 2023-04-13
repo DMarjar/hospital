@@ -12,7 +12,7 @@ class Consultorio extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:8080/consultorio/get')
+        axios.get('http://localhost:8080/hospital/consultorio/')
         .then(res => {
             this.setState({ consultorios: res.data.data});
         })
@@ -26,7 +26,7 @@ class Consultorio extends Component {
         return(
             <div className="card mt-3">
                 <DataTable value={consultorios} className="p-datatable-gridlines">
-                    <Column field="id" header="Id" />
+                    <Column field="id" header="No." />
                     <Column field="piso" header="Piso" />
                     <Column field="medico.nombre" header="Medico" />
                     <Column field="medico.especialidad" header="Especialidad" />

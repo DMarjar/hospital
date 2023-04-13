@@ -26,7 +26,7 @@ class Medico extends Component {
     return (
       <div className="card  mt-3">
         <DataTable value={medicos} className="p-datatable-gridlines">
-          <Column field="id" header="Id" />
+          <Column field="id" header="No." />
           <Column field="nombre" header="Nombre" />
           <Column field="apellidos" header="Apellido" />
           <Column field="sexo" header="Sexo" />

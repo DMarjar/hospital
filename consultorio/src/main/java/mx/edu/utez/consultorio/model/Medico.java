@@ -15,12 +15,15 @@ public class Medico {
 
     private int edad;
 
-    public Medico(int id, String nombre, String apellidos, Sexo sexo, int edad) {
+    private String especialidad;
+
+    public Medico(int id, String nombre, String apellidos, Sexo sexo, int edad, String especialidad) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.sexo = sexo;
         this.edad = edad;
+        this.especialidad = especialidad;
     }
 
     public int getId() {
@@ -61,5 +64,13 @@ public class Medico {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 }

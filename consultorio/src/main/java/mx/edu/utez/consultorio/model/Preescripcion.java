@@ -19,7 +19,9 @@ public class Preescripcion {
 
     private Medico medico;
 
-    public Preescripcion(int id, String fechaPrescripcion, Medicina medicina, String duracionTratamiento, String indicaciones, Paciente paciente, Medico medico) {
+    private Consultorio consultorio;
+
+    public Preescripcion(int id, String fechaPrescripcion, Medicina medicina, String duracionTratamiento, String indicaciones, Paciente paciente, Medico medico, Consultorio consultorio) {
         this.id = id;
         this.fechaPrescripcion = fechaPrescripcion;
         this.medicina = medicina;
@@ -27,6 +29,7 @@ public class Preescripcion {
         this.indicaciones = indicaciones;
         this.paciente = paciente;
         this.medico = medico;
+        this.consultorio = consultorio;
     }
 
     public int getId() {
@@ -83,5 +86,13 @@ public class Preescripcion {
 
     public void setMedico(Medico medico) {
         this.medico = medico;
+    }
+
+    public Consultorio getConsultorio() {
+        return consultorio;
+    }
+
+    public void setConsultorio(Consultorio consultorio) {
+        this.consultorio = consultorio;
     }
 }

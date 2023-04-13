@@ -27,7 +27,7 @@ class Medicina extends Component {
       
       <div className="card mt-3">
         <DataTable value={medicinas} className="p-datatable-gridlines">
-          <Column field="id" header="Id" />
+          <Column field="id" header="No." />
           <Column field="nombre" header="Nombre" />
           <Column field="presentacion" header="Presentación" />
           <Column field="cantidad" header="Cantidad" />

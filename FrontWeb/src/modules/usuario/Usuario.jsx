@@ -26,7 +26,7 @@ class Usuario    extends Component {
         return(
             <div className='card mt-3'>
                 <DataTable value={usuarios} className='p-datatable-gridlines'>
-                    <Column field='id' header="Id" />
+                    <Column field='id' header="No." />
                     <Column field='username' header="Username" />
                     <Column field='role' header="Role" />
                 </DataTable>
