@@ -12,7 +12,7 @@ class Medico extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://18.222.153.46:8080/hospital/medico/')
+    axios.get('http://34.204.1.44:8080/hospital/medico/')
       .then(res => {
         this.setState({ medicos: res.data.data });
       })
