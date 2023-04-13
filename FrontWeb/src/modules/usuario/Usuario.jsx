@@ -12,7 +12,7 @@ class Usuario    extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:8080/hospital/usuario/')
+        axios.get('http://18.222.153.46:8080/hospital/usuario/')
         .then(res => {
             this.setState({ usuarios: res.data.data });
         })

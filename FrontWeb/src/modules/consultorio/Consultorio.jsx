@@ -12,7 +12,7 @@ class Consultorio extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:8080/hospital/consultorio/')
+        axios.get('http://18.222.153.46:8080/hospital/consultorio/')
         .then(res => {
             this.setState({ consultorios: res.data.data});
         })
