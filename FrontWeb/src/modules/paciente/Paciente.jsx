@@ -12,7 +12,7 @@ class Paciente extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://34.204.1.44:8080/hospital/paciente/')
+    axios.get('http://localhost:8080/hospital/paciente/')
       .then(res => {
         this.setState({ pacientes: res.data.data });
       })

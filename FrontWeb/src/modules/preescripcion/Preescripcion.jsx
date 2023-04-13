@@ -12,7 +12,7 @@ class Preescripcion extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://34.204.1.44:8080/hospital/prescripcion/')
+    axios.get('http://localhost:8080/hospital/prescripcion/')
       .then(res => {
         this.setState({ preescripciones: res.data.data });
       })
