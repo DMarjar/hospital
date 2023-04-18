@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/hospital/consultorio")
+@CrossOrigin(origins = "*")
 public class ConsultorioController {
     @Autowired
     private ConsultorioService service;

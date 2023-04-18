@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/hospital/prescripcion")
+@CrossOrigin(origins = "*")
 public class PreescripcionController {
     @Autowired
     private PreescripcionService service;
